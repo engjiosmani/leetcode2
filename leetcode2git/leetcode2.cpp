@@ -7,14 +7,14 @@
 
 using namespace std;
 
-// Definition for singly-linked list.
+// Singly-linked list.
 struct ListNode {
     int val;
     ListNode* next;
     ListNode(int x) : val(x), next(NULL) {}
 };
 
-// Definition for a binary tree node.
+// Binary tree node.
 struct TreeNode {
     int val;
     TreeNode* left;
@@ -24,6 +24,8 @@ struct TreeNode {
 
 
 // Valid parentheses
+//Time complexity: O(n)
+//Space complexity: O(n)
 class stack1 {
 public:
     bool isValid(string s) {
@@ -47,6 +49,8 @@ public:
 };
 
 // Remove outermost parentheses
+//Time complexity: O(n)
+//Space complexity: O(n)
 class stack2 {
 public:
     string removeOuterParentheses(string S) {
@@ -62,6 +66,8 @@ public:
 };
 
 // Maximum nesting depth of the parentheses
+//Time complexity: O(n)
+//Space complexity: O(1)
 class stack3 {
 public:
     int maxDepth(string s) {
@@ -83,6 +89,8 @@ public:
 };
 
 // Number of students unable to eat lunch
+//Time complexity: O(n)
+//Space complexity: O(1)
 class queue1 {
 public:
     int countStudents(vector<int>& students, vector<int>& sandwiches) {
@@ -120,6 +128,8 @@ public:
 };
 
 // Number of recent calls
+//Time complexity: O(n)
+//Space complexity: O(n)
 class queue2 {
 public:
     queue<int> q;
@@ -133,6 +143,8 @@ public:
 };
 
 // Merge two sorted lists
+//Time complexity: O(n)
+//Space complexity: O(1)
 class linkedlist1 {
 public:
     ListNode* mergeTwoLists(ListNode* list1, ListNode* list2) {
@@ -156,6 +168,8 @@ public:
 };
 
 // Remove duplicates from sorted list
+//Time complexity: O(n)
+//Space complexity: O(1)
 class linkedlist2 {
 public:
     ListNode* deleteDuplicates(ListNode* head) {
@@ -170,6 +184,8 @@ public:
 };
 
 // Reverse linked list
+//Time complexity: O(n)
+//Space complexity: O(1)
 class linkedlist3 {
 public:
     ListNode* reverseList(ListNode* head) {
@@ -185,6 +201,8 @@ public:
 };
 
 // Middle of the linked list
+//Time complexity: O(n)
+//Space complexity: O(1)
 class linkedlist4 {
 public:
     ListNode* middleNode(ListNode* head) {
@@ -204,6 +222,8 @@ public:
 };
 
 // Intersection of two linked lists
+//Time complexity: O(m+n)
+//Space complexity: O(1)
 class linkedlist5 {
 public:
     ListNode* getIntersectionNode(ListNode* headA, ListNode* headB) {
@@ -230,6 +250,8 @@ public:
 };
 
 // Rrange sum of BST
+//Time complexity: O(n)
+//Space complexity: O(log n)-O(n) it depends on the structure of the BST
 class binarysearchtree1 {
 public:
     int rangeSumBST(TreeNode* root, int low, int high) {
@@ -252,6 +274,8 @@ public:
 };
 
 // Search in a binary search tree
+//Time complexity: O(log n)
+//Space complexity: O(1)
 class binarysearchtree2 {
 public:
     TreeNode* searchBST(TreeNode* root, int val) {
@@ -268,6 +292,8 @@ public:
 };
 
 // Minimum distance between BST nodes
+//Time complexity: O(n)
+//Space complexity: O(h)
 class binarysearchtree3 {
 public:
     int res = INT_MAX, prev = -1;
@@ -287,6 +313,8 @@ public:
 };
 
 // Two sum IV-input is a BST
+//Time complexity: O(n)
+//Space complexity: O(n)
 class binarysearchtree4 {
 public:
     bool findTarget(TreeNode* root, int k) {
@@ -307,6 +335,8 @@ public:
 };
 
 // Minimum absolute difference in BST
+//Time complexity: O(n)
+//Space complexity: O(log n)-O(n) it depends on the height of the BST
 class binarysearchtree5 {
 public:
     int min_dif = INT_MAX, val = -1;
@@ -323,6 +353,8 @@ public:
 };
 
 // How many numbers are smaller than the current number
+//Time complexity: O(nlogn)
+//Space complexity: O(n)
 class hashtable1 {
 public:
     vector<int> smallerNumbersThanCurrent(vector<int>& nums) {
@@ -338,6 +370,8 @@ public:
 };
 
 // Decode the message
+//Time complexity: O(K+M)
+//Space complexity: O(K+M)
 class hashtable2 {
 public:
     string decodeMessage(string key, string message) {
@@ -366,6 +400,8 @@ public:
 };
 
 // Permutation difference between two strings
+//Time complexity: O(n+m)
+//Space complexity: O(c)
 class hashtable3 {
 public:
     int findPermutationDifference(string s, string t) {
@@ -382,6 +418,8 @@ public:
 };
 
 // Count number of pairs with absolute difference K
+//Time complexity: O(n)
+//Space complexity: O(n)
 class hashtable4 {
 public:
     int countKDifference(vector<int>& nums, int k) {
@@ -398,6 +436,8 @@ public:
 };
 
 // Number of arithmetic triplets
+//Time complexity: O(n)
+//Space complexity: O(n)
 class hashtable5 {
 public:
     int arithmeticTriplets(vector<int>& nums, int diff) {
